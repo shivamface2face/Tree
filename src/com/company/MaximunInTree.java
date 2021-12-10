@@ -14,7 +14,7 @@ public class MaximunInTree {
 
      static int maximunValeInTree(Node root) {
         if (root==null){
-            return -1;
+            return Integer.MIN_VALUE;
         }
         return Math.max(root.key, Math.max(maximunValeInTree(root.left),maximunValeInTree(root.right)));
     }
